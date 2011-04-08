@@ -1,5 +1,7 @@
 Promotedornot::Application.routes.draw do
   resources :promotions
+  
+  root :to => "promotions#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

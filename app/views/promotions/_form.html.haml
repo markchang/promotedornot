@@ -1,16 +1,6 @@
 = form_for @promotion do |f|
-  = f.error_messages
-  %p
-    = f.label :position
-    %br
-    = f.text_field :position
-  %p
-    = f.label :employer
-    %br
-    = f.text_field :employer
-  %p
-    = f.label :name
-    %br
-    = f.text_field :name
-  %p
-    = f.submit
+	= f.inputs do
+	  = f.input :position
+	  = f.input :employer
+	  = f.input :name
+	= f.buttons
