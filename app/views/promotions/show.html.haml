@@ -1,0 +1,18 @@
+- title "Promotion"
+
+%p
+  %strong Position:
+  = @promotion.position
+%p
+  %strong Employer:
+  = @promotion.employer
+%p
+  %strong Name:
+  = @promotion.name
+
+%p
+  = link_to "Edit", edit_promotion_path(@promotion)
+  |
+  = link_to "Destroy", @promotion, :confirm => 'Are you sure?', :method => :delete
+  |
+  = link_to "View All", promotions_path
