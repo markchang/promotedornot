@@ -3,6 +3,8 @@
 - if current_user
 	%p= link_to "Create Promotion", new_promotion_path
 
+= paginate @promotions
+
 - for promotion in @promotions
 	= render promotion
 	

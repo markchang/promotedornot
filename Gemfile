@@ -6,10 +6,10 @@ gem 'formtastic'
 gem 'haml'
 gem 'omniauth'
 gem 'kaminari'
+gem 'jquery-rails'
 
 group :development do
   gem 'nifty-generators'
-  gem 'jquery-rails'
 end
 
 group :test do

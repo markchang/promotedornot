@@ -1,6 +1,6 @@
 class PromotionsController < ApplicationController
   def index
-    @promotions = Promotion.all
+    @promotions = Promotion.recent.page(params[:page]).per(10)
   end
 
   def show
