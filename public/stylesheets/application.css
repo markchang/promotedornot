@@ -97,6 +97,7 @@ a img {
 .promotion-controls {
   float:right;
   padding:10px;
+  margin-left:20px;
 }
 
 .promotion-time {

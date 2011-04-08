@@ -5,6 +5,7 @@ gem 'sqlite3'
 gem 'formtastic'
 gem 'haml'
 gem 'omniauth'
+gem 'kaminari'
 
 group :development do
   gem 'nifty-generators'
