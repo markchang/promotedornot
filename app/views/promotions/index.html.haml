@@ -1,17 +1,8 @@
 - title "Promotions"
 
-%table
-  %tr
-    %th Position
-    %th Employer
-    %th Name
-  - for promotion in @promotions
-    %tr
-      %td= promotion.position
-      %td= promotion.employer
-      %td= promotion.name
-      %td= link_to 'Show', promotion
-      %td= link_to 'Edit', edit_promotion_path(promotion)
-      %td= link_to 'Destroy', promotion, :confirm => 'Are you sure?', :method => :delete
+- if current_user
+	%p= link_to "Create Promotion", new_promotion_path
 
-%p= link_to "New Promotion", new_promotion_path
+- for promotion in @promotions
+	= render promotion
+	

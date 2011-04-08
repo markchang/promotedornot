@@ -1,6 +1,5 @@
-= form_for @promotion do |f|
+= semantic_form_for @promotion do |f|
 	= f.inputs do
-	  = f.input :position
-	  = f.input :employer
-	  = f.input :name
+		= f.input :position
+		= f.input :employer
 	= f.buttons
