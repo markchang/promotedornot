@@ -3,6 +3,9 @@ Promotedornot::Application.routes.draw do
   match "/auth/:provider/callback" => "sessions#create"  
   match "/signout" => "sessions#destroy", :as => :signout
   
+  # static pages
+  match "/about" => "statics#about", :as => :about
+  
   root :to => "promotions#index"
 
   # The priority is based upon order of creation:
