@@ -80,6 +80,10 @@ a img {
   padding-top: 20px;
 }
 
+#footer {
+  text-align: center;
+}
+
 .promotion-row {
   overflow: auto;
   border: 1px dashed #ddd;
