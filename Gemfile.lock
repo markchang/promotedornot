@@ -30,6 +30,7 @@ GEM
     activesupport (3.0.5)
     addressable (2.2.4)
     arel (2.0.9)
+    babosa (0.3.3)
     builder (2.1.2)
     diff-lcs (1.1.2)
     erubis (2.6.6)
@@ -42,6 +43,8 @@ GEM
       actionpack (>= 2.3.7)
       activesupport (>= 2.3.7)
       i18n (~> 0.4)
+    friendly_id (3.2.1.1)
+      babosa (~> 0.3.0)
     haml (3.0.25)
     i18n (0.5.0)
     jquery-rails (0.2.7)
@@ -153,6 +156,7 @@ PLATFORMS
 
 DEPENDENCIES
   formtastic
+  friendly_id
   haml
   jquery-rails
   kaminari

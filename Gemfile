@@ -7,6 +7,7 @@ gem 'haml'
 gem 'omniauth'
 gem 'kaminari'
 gem 'jquery-rails'
+gem 'friendly_id'
 
 group :development do
   gem 'nifty-generators'
