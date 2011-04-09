@@ -2,4 +2,8 @@
 	= f.inputs do
 		= f.input :position
 		= f.input :employer
+		= f.input :status, :as => :radio, :label => "Promotion status",
+				:collection => [ ['Pending','pending'],
+												 ['Got it!', 'yes'],
+												 ['Denied', 'no']]
 	= f.buttons

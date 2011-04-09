@@ -1,5 +1,6 @@
 class Promotion < ActiveRecord::Base
-  attr_accessible :position, :employer, :name
+  attr_accessible :position, :employer, :name, :status
+  validates_presence_of :status, :position, :employer
   
-  named_scope :recent, :order => "promotions.created_at DESC"
+  scope :recent, :order => "promotions.updated_at DESC"
 end

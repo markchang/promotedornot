@@ -1,6 +1,24 @@
-- title "Promotion"
+- title "#{@promotion.name}", false
 
-%p= link_to "All promotions", promotions_path
-
-= render @promotion
-
+- if is_signed_in_user?(@promotion.uid)
+	#user_nav
+		= link_to 'Edit', edit_promotion_path(@promotion)
+		|
+		= link_to 'Destroy', @promotion, :confirm => 'Are you sure?', :method => :delete
+		|
+		= link_to 'Home', root_url
+	
+	
+.promotion-big
+	= promotion_yes_no_pending @promotion
+.promotion-main
+	%b= @promotion.name
+	= promotion_status_text @promotion
+	%b= @promotion.position
+	at
+	%br/
+	%b= @promotion.employer
+.promotion-time
+	Updated
+	= time_ago_in_words @promotion.updated_at
+	ago

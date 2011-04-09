@@ -1,5 +1,5 @@
 body {
-  background-color: #4b7399;
+  background-color: white;
   font-family: Verdana, Helvetica, Arial;
   font-size: 14px;
 }
@@ -23,7 +23,7 @@ a img {
   margin: 0 auto;
   background: white;
   padding: 20px 40px;
-  border: solid 1px black;
+/*  border: solid 1px black;*/
   margin-top: 20px;
 }
 
@@ -76,6 +76,8 @@ a img {
 
 #user_nav {
   float: right;
+  text-align: right;
+  padding-top: 20px;
 }
 
 .promotion-row {

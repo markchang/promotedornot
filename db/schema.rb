@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110408054142) do
+ActiveRecord::Schema.define(:version => 20110409030139) do
 
   create_table "promotions", :force => true do |t|
     t.string   "position"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(:version => 20110408054142) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "uid"
+    t.string   "status"
   end
 
   create_table "users", :force => true do |t|

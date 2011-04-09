@@ -6,11 +6,11 @@
 			= link_to 'Destroy', promotion, :confirm => 'Are you sure?', :method => :delete
 	.promotion-text
 		%b= promotion.name
-		is up for promotion to
+		= promotion_status_text promotion
 		%b= promotion.position
 		at
 		%b= promotion.employer
 		.promotion-time
-			Created
-			= time_ago_in_words promotion.created_at
+			Updated
+			= time_ago_in_words promotion.updated_at
 			ago

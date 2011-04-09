@@ -5,6 +5,7 @@ class PromotionsController < ApplicationController
 
   def show
     @promotion = Promotion.find(params[:id])
+    render :layout => 'big'
   end
 
   def new

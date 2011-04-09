@@ -1,0 +1,43 @@
+body {
+  background-color: #fff;
+  font-family: Verdana, Helvetica, Arial;
+  font-size: 14px;
+  text-decoration: none; 
+  color: black;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+#user_nav {
+  float: right;
+  text-align: right;
+}
+
+.promotion-big {
+  text-align: center;
+  padding-top: 100px;
+  font-weight: bold; 
+  font-size: 120pt; 
+}
+
+.promotion-main {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: normal;
+  font-size: 12pt;
+}
+
+.promotion-time {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 8pt;
+}
