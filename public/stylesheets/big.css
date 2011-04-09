@@ -20,6 +20,7 @@ a {
 #user_nav {
   float: right;
   text-align: right;
+  font-size: 80%;
 }
 
 #footer {
@@ -44,7 +45,7 @@ a {
 }
 
 .promotion-time {
-  padding-top: 50px;
+  padding-top: 10px;
   text-align: center;
   font-size: 8pt;
 }

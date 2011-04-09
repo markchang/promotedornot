@@ -1,11 +1,6 @@
 .promotion-row
-	.promotion-controls
-		= link_to 'Show', promotion
-		- if is_signed_in_user?(promotion.uid)
-			= link_to 'Edit', edit_promotion_path(promotion)
-			= link_to 'Destroy', promotion, :confirm => 'Are you sure?', :method => :delete
 	.promotion-text
-		%b= promotion.name
+		%b= link_to promotion.name, promotion
 		= promotion_status_text promotion
 		%b= promotion.position
 		at
@@ -14,3 +9,10 @@
 			Updated
 			= time_ago_in_words promotion.updated_at
 			ago
+		.promotion-controls
+			- if is_signed_in_user?(promotion.uid)
+				= link_to 'Show', promotion
+				|
+				= link_to 'Edit', edit_promotion_path(promotion)
+				|
+				= link_to 'Destroy', promotion, :confirm => 'Are you sure?', :method => :delete

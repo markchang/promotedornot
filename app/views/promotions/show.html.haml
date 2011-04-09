@@ -5,12 +5,7 @@
 		%a.twitter-share-button{"data-count" => "none", "data-text" => "Follow my promotion: ", "data-url" => "#{promotion_url(@promotion)}", "data-via" => "promotedornot", :href => "http://twitter.com/share"} Tweet
 		%script{:src => "http://platform.twitter.com/widgets.js", :type => "text/javascript"}
 		%br/
-		= link_to 'Edit', edit_promotion_path(@promotion)
-		|
-		= link_to 'Destroy', @promotion, :confirm => 'Are you sure?', :method => :delete
-		|
-		= link_to 'Home', root_url	
-	
+			
 .promotion-big
 	= promotion_yes_no_pending @promotion
 .promotion-main
@@ -27,3 +22,9 @@
 
 #footer
 	= link_to 'Home', :root
+	- if is_signed_in_user?(@promotion.uid)
+		|
+		= link_to 'Edit', edit_promotion_path(@promotion)
+		|
+		= link_to 'Destroy', @promotion, :confirm => 'Are you sure?', :method => :delete
+	
